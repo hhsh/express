@@ -30,6 +30,10 @@ app.get('/', function(req, res){
   res.render('index', { title: 'Markdown Example' });
 });
 
+app.get('/2', function(req, res){
+  res.render('index2', { title: 'Markdown Example' });
+});
+
 app.get('/fail', function(req, res){
   res.render('missing', { title: 'Markdown Example' });
 });
